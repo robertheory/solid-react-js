@@ -18,12 +18,10 @@ const PrettyInput = ({ isLarge, ...rest }: PrettyInputProps) => (
   </div>
 );
 
-export const App = () => {
-  return (
-    <div>
-      <PrettyInput isLarge={true} placeholder='Type something...' />
-      <PrettyInput isLarge={false} onChange={console.log} />
-      <PrettyInput isLarge={false} onLoad={console.log} />
-    </div>
-  );
-};
+export const App = () => (
+  <div>
+    <PrettyInput isLarge={true} placeholder='Type something...' />
+    <PrettyInput isLarge={false} onChange={console.log} />
+    <PrettyInput isLarge={false} onLoad={console.log} />
+  </div>
+);
