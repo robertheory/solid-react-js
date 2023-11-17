@@ -18,4 +18,12 @@ const PrettyInput = ({ isLarge, ...rest }: PrettyInputProps) => (
   </div>
 );
 
-export default PrettyInput;
+export const App = () => {
+  return (
+    <div>
+      <PrettyInput isLarge={true} placeholder='Type something...' />
+      <PrettyInput isLarge={false} onChange={console.log} />
+      <PrettyInput isLarge={false} onLoad={console.log} />
+    </div>
+  );
+};
