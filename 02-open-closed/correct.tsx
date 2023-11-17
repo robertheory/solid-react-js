@@ -24,4 +24,12 @@ const ButtonWithIconExtended = ({ color, icon, text }: ButtonProps) => {
   );
 };
 
-export default ButtonWithIconExtended;
+export const App = () => {
+  return (
+    <div>
+      <ButtonWithIconExtended color='green' icon='add' text='Add' />
+      <ButtonWithIconExtended color='red' icon='delete' text='Delete' />
+      <ButtonWithIconExtended color='blue' icon='edit' text='Edit' />
+    </div>
+  );
+};
